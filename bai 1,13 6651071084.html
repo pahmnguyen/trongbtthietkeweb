@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+
+    <form id="formDuLich">
+        <table border="1" bgcolor="#FFFDE7" align="center" cellpadding="4" cellspacing="0">
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="#1565C0" size="4"><b>Đăng ký du lịch</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" id="hoTen" size="30" value="Phạm Ngọc Cẩm Đào"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" id="diaChi" size="30" value="227 Nguyễn Văn Cừ"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" id="dienThoai" size="15" value="8351056"></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" id="khachVN" checked></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select id="chonTour">
+                        <optgroup label="Miền Bắc">
+                            <option value="Hà Nội - Hạ Long - Sapa">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="Hà Nội - Chùa Hương - Ninh Bình">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="Hà Nội - Cát Bà - Tuần Châu">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="Huế - Bạch Mã - Đà Nẵng">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="Nha Trang - Đà Lạt">Nha Trang - Đà Lạt</option>
+                            <option value="Buôn mê thuột - Gia lai - Kontum" selected>Buôn mê thuột - Gia lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="TP.HCM - Cần Thơ - Cà Mau">TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option value="TP.HCM - Mỹ Tho">TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input type="radio" name="phuongTien" id="mayBay" value="Máy bay"> Máy bay
+                    <input type="radio" name="phuongTien" id="xeOTo" value="Xe ô tô" checked> Xe ô tô
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset style="border: 1px solid brown; width: 350px; height: 55px; margin: auto;">
+                        <legend align="center" style="font-style: italic; color: brown;">Số lượng đoàn khách</legend>
+                        <table border="0" width="100%">
+                            <tr>
+                                <td align="center">Người lớn <input type="text" id="nguoiLon" size="3" value="6"></td>
+                                <td align="center">Trẻ em <input type="text" id="treEm" size="3" value="4"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea id="ghiChu" rows="2" cols="30" style="width: 300px;">Có 2 trẻ em dưới 6 tuổi&#10;Có 2 người ăn chay</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="document.getElementById('thongBao').innerText = 'Bạn đã đăng ký thành công!!!'">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="red"><div id="thongBao"></div></font>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
