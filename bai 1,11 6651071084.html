@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển trên form</title>
+</head>
+<body>
+    <form>
+        <table border="1" bgcolor="#D0E1F9" align="center">
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="#800000"><b>Đăng nhập</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td>Mã người dùng:</td>
+                <td>
+                    <input type="text" id="maUser" value="ptnhung">
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="password" id="matKhau">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Đồng ý" onclick="document.getElementById('nhanKetQua').innerText = document.getElementById('maUser').value">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="blue"><b><span id="nhanKetQua"></span></b></font>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
